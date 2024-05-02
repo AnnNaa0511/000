@@ -1,0 +1,58 @@
+/* Chọn các thẻ p là thẻ con thứ lẻ */
+p:nth-child(odd)
+{
+    color: brown;
+    background-color: aqua;
+}
+
+/* Chọn các thẻ p là thẻ con thứ chẵn */
+p:nth-child(even)
+{
+    color: brown;
+    background-color: aqua;
+}
+
+/* Chọn các thẻ p là thẻ con đầu tiên */
+p:first-child
+{
+    color: red;
+    background-color: black;
+}
+
+/* Chọn các thẻ p là thẻ con cuối cùng */
+p:first-child
+{
+    color: red;
+    background-color: black;
+}
+
+/* Chọn các thẻ p là thẻ con thứ 2n+1 */
+p:nth-child(2n+1)
+{
+    color: red;
+    background-color: black;
+}
+
+/* Chọn các thẻ span là thẻ con đầu tiên sau đó chọn các thẻ p nằm trong các thẻ span vừa chọn để áp dụng thuộc tính css */
+span:first-child p
+{
+    /* do something... */
+}
+
+/* Chọn các thẻ span là thẻ con cuối cùng, sau đó chọn các thẻ p là thẻ con đầu tiên trong các thẻ span vừa chọn đẻ áp dụng các thuộc tính css */
+span:last-child p:first-child
+{
+    /* do something */
+}
+
+p:only-child
+{
+    background-color: rgb(49, 1, 94);
+    color: rgb(99, 99, 219);
+}
+
+p:only-of-type
+{
+    background-color: rgb(210, 107, 107);
+    color: rgb(18, 4, 18);
+}
